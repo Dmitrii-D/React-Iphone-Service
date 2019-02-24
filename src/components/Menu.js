@@ -50,7 +50,7 @@ const CallButton = styled.button`
     font-weight: 400;
 `
 
-class Address extends React.Component {
+class Address extends Component {
     render() {
         return (
             <span>{this.props.addr}</span>

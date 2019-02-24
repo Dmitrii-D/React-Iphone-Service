@@ -5,7 +5,7 @@ import Slide_2 from '../img/slide-2.jpg';
 import Slide_3 from '../img/slide-3.jpg';
 import Slide_4 from '../img/slide-4.jpg';
 
-class Slider extends React.Component {
+class Slider extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -42,9 +42,9 @@ class Slider extends React.Component {
     intervalBetweenSlides() {
         if(this.state.autoplay === true) {
             if(this.state.active === this.state.max - 1) {
-                this.state.active = 0
+                this.state.active = 0;
             } else {
-                this.state.active++
+                this.state.active++;
             }
             this.setState({
                 active: this.state.active

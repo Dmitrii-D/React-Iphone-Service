@@ -39,7 +39,7 @@ const CallBtn = styled.button`
 `
 
 
-class Main extends React.Component {
+class Main extends Component {
     render() {
         return(
             <Row>
